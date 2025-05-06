@@ -9,7 +9,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io//favicon-16x16.png">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="styles/style.css"/>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles/output.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   </head>
   <body>
@@ -446,121 +447,139 @@
             </h2>
             <div class="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
                 <p class="text-lg text-slate-500 max-w-3xl mx-auto">
-                    What my clients say about working with me
+                    What my clients and colleagues say about my work
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-card bg-white p-8 rounded-xl shadow-md">
-                    <div class="flex items-center mb-6">
-                        <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
-                            <img src="images/testimonials/testimonial_placeholder.png" alt="Ivan Jimenez" class="w-full h-full object-cover"/>
-                        </div>
-                        <div class="card-info">
-                            <h4 class="font-bold">Ivan Jimenez</h4>
-                            <p class="text-sm text-slate-500">Manager, Customer Success, Flashtalking </p>
-                        </div>
-                    </div>
-                    <p class="text-slate-600 mb-6">
-                    ""
-                    </p>
-                    <div class="flex text-yellow-400">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                <!-- Testimonial 2 -->
-                <div class="testimonial-card bg-white p-8 rounded-xl shadow-md">
-                    <div class="flex items-center mb-6">
-                        <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
-                            <img src="images/testimonials/testimonial_placeholder.png" alt="Joel Weinberg" class="w-full h-full object-cover"/>
-                        </div>
-                        <div class="card-info">
-                            <h4 class="font-bold">Joel Weinberg</h4>
-                            <p class="text-sm text-slate-500">Product and Sales Specialist, Amazon</p>
+            <div class="testimonials-slider">
+                <div class="carousel carousel-center rounded-box">
+                    <div class="carousel-item">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card bg-white p-8 rounded-xl shadow-md m-4">
+                            <div class="flex items-center mb-6">
+                                <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
+                                    <img src="images/testimonials/testimonial_placeholder.png" alt="Ivan Jimenez" class="w-full h-full object-cover"/>
+                                </div>
+                                <div class="card-info">
+                                    <h4 class="font-bold">Ivan Jimenez</h4>
+                                    <p class="text-sm text-slate-500">Manager, Customer Success, Flashtalking </p>
+                                </div>
+                            </div>
+                            <p class="text-slate-600 mb-6">
+                                Donec viverra interdum lorem, vel porta justo commodo consequat. Duis sit amet sagittis nisl. Donec imperdiet purus ut justo fermentum egestas. Integer ligula dolor, ultrices a lacus faucibus, ornare bibendum elit. 
+                            </p>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
-                    <p class="text-slate-600 mb-6">
-                    ""
-                    </p>
-                    <div class="flex text-yellow-400">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="carousel-item">
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card bg-white p-8 rounded-xl shadow-md m-4">
+                            <div class="flex items-center mb-6">
+                                <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
+                                    <img src="images/testimonials/testimonial_placeholder.png" alt="Joel Weinberg" class="w-full h-full object-cover"/>
+                                </div>
+                                <div class="card-info">
+                                    <h4 class="font-bold">Joel Weinberg</h4>
+                                    <p class="text-sm text-slate-500">Product and Sales Specialist, Amazon</p>
+                                </div>
+                            </div>
+                            <p class="text-slate-600 mb-6">
+                            ""
+                            </p>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>   
                     </div>
-                </div>                
-                <!-- Testimonial 3 -->
-                <div class="testimonial-card bg-white p-8 rounded-xl shadow-md">
-                    <div class="flex items-center mb-6">
-                        <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
-                            <img src="images/testimonials/testimonial_placeholder.png" alt="Felicia Chamberlain" class="w-full h-full object-cover"/>
-                        </div>
-                        <div class="card-info">
-                            <h4 class="font-bold">Felicia Chamberlain</h4>
-                            <p class="text-sm text-slate-500">Creative Services Director, Innovid</p>
-                        </div>
-                    </div>
-                    <p class="text-slate-600 mb-6">
-                    ""
-                    </p>
-                    <div class="flex text-yellow-400">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                <!-- Testimonial 4 -->
-                <div class="testimonial-card bg-white p-8 rounded-xl shadow-md">
-                    <div class="flex items-center mb-6">
-                        <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
-                            <img src="images/testimonials/testimonial_placeholder.png" alt="William Orthman" class="w-full h-full object-cover"/>
-                        </div>
-                        <div class="card-info">
-                            <h4 class="font-bold">William Orthman</h4>
-                            <p class="text-sm text-slate-500">Senior Product Marketing Manager, Amazon</p>
-                        </div>
-                    </div>
-                    <p class="text-slate-600 mb-6">
-                    ""
-                    </p>
-                    <div class="flex text-yellow-400">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                <!-- Testimonial 5 -->
-                <div class="testimonial-card bg-white p-8 rounded-xl shadow-md">
-                    <div class="flex items-center mb-6">
-                        <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
-                            <img src="images/testimonials/testimonial_placeholder.png" alt="Alexis Leyva" class="w-full h-full object-cover"/>
-                        </div>
-                        <div class="card-info">
-                            <h4 class="font-bold">Alexis Leyva</h4>
-                            <p class="text-sm text-slate-500">Digital Director, MullenLowe SSP3</p>
+                    <div class="carousel-item">
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-card bg-white p-8 rounded-xl shadow-md m-4">
+                            <div class="flex items-center mb-6">
+                                <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
+                                    <img src="images/testimonials/testimonial_placeholder.png" alt="Felicia Chamberlain" class="w-full h-full object-cover"/>
+                                </div>
+                                <div class="card-info">
+                                    <h4 class="font-bold">Felicia Chamberlain</h4>
+                                    <p class="text-sm text-slate-500">Creative Services Director, Innovid</p>
+                                </div>
+                            </div>
+                            <p class="text-slate-600 mb-6">
+                            ""
+                            </p>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
-                    <p class="text-slate-600 mb-6">
-                    ""
-                    </p>
-                    <div class="flex text-yellow-400">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="carousel-item">
+                        <!-- Testimonial 4 -->
+                        <div class="testimonial-card bg-white p-8 rounded-xl shadow-md m-4">
+                            <div class="flex items-center mb-6">
+                                <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
+                                    <img src="images/testimonials/testimonial_placeholder.png" alt="William Orthman" class="w-full h-full object-cover"/>
+                                </div>
+                                <div class="card-info">
+                                    <h4 class="font-bold">William Orthman</h4>
+                                    <p class="text-sm text-slate-500">Senior Product Marketing Manager, Amazon</p>
+                                </div>
+                            </div>
+                            <p class="text-slate-600 mb-6">
+                            ""
+                            </p>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>  
                     </div>
-                </div>                
+                    <div class="carousel-item">
+                        <!-- Testimonial 5 -->
+                        <div class="testimonial-card bg-white p-8 rounded-xl shadow-md m-4">
+                            <div class="flex items-center mb-6">
+                                <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
+                                    <img src="images/testimonials/testimonial_placeholder.png" alt="Alexis Leyva" class="w-full h-full object-cover"/>
+                                </div>
+                                <div class="card-info">
+                                    <h4 class="font-bold">Alexis Leyva</h4>
+                                    <p class="text-sm text-slate-500">Digital Director, MullenLowe SSP3</p>
+                                </div>
+                            </div>
+                            <p class="text-slate-600 mb-6">
+                            ""
+                            </p>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div> 
+                    </div>
+
+                  </div>
+
+                             
+                
+                
+                               
             </div>
         </div>
     </section>
