@@ -102,7 +102,12 @@ body {
   bottom: -100px;
   left: -100px;
 }
-
+.testimonials-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
 .testimonial-card {
   transition: all 0.3s ease;
 }
