@@ -121,7 +121,7 @@ body {
   visibility: visible;
 }
 .modal-none{
-  display: none !important;
+  display: none;
 }
 .modal.show {
   display: flex;
