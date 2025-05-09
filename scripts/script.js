@@ -125,3 +125,17 @@ function stopVideo(modal) {
     video.currentTime = 0;
   }
 }
+document.querySelectorAll('.carousel .controls button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const carousel = btn.closest('.carousel');
+    // 1. quitamos active de todos
+    carousel.querySelectorAll('.carousel-item').forEach(item =>
+      item.classList.remove('active')
+    );
+    // 2. elegimos a qué slide vamos
+    const targetId = btn.dataset.prev || btn.dataset.next;
+    const targetSlide = carousel.querySelector('#' + targetId);
+    // 3. lo activamos
+    targetSlide.classList.add('active');
+  });
+});
