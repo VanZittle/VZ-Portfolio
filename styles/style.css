@@ -201,3 +201,31 @@ body {
 .carousel-item.active {
   display: block;
 }
+
+.slider-button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--light);
+  background-color: var(--primary);
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.slider-display-left {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  margin-left: 10px;
+  transform: translate(0%, -50%);
+}
+  .slider-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    margin-right: 15px;
+    transform: translate(0%, -50%);
+  }

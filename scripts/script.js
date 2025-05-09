@@ -83,7 +83,6 @@ document.querySelectorAll("#skills").forEach((section) => {
 // opens the modal
 document.querySelectorAll('.open-modal-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    console.log("click");
     const modalId = btn.getAttribute('data-modal');
     const modal = document.getElementById(modalId);
     modal.classList.add('show');
@@ -126,17 +125,21 @@ function stopVideo(modal) {
   }
 }
 //Slider for project gallery
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.carousel .controls button').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const carousel = btn.closest('.carousel');
-      carousel.querySelectorAll('.carousel-item').forEach(item =>
-        item.classList.remove('active')
-      );
-      const targetId = btn.dataset.prev || btn.dataset.next;
-      const target = carousel.querySelector('#' + targetId);
-      if (target) target.classList.add('active');
-      else console.warn('Slide no encontrado:', targetId);
-    });
-  });
-});
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
