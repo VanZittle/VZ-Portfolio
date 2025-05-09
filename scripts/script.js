@@ -1,4 +1,5 @@
 // Mobile menu toggle
+
 const mobileMenuButton = document.getElementById("mobile-menu-button");
 const mobileMenu = document.getElementById("mobile-menu");
 
@@ -47,29 +48,6 @@ window.addEventListener("scroll", () => {
     }
   });
 });
-
-// Form submission
-const contactForm = document.getElementById("contact-form");
-
-contactForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  // Get form values
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const subject = document.getElementById("subject").value;
-  const message = document.getElementById("message").value;
-
-  // Here you would typically send the form data to a server
-  // For this example, we'll just show an alert
-  alert(
-    `Thank you, ${name}! Your message has been sent. I'll get back to you soon.`
-  );
-
-  // Reset form
-  contactForm.reset();
-});
-
 // Animate skill bars on scroll
 const skillBars = document.querySelectorAll(".skill-progress");
 
@@ -100,3 +78,50 @@ const observer = new IntersectionObserver(
 document.querySelectorAll("#skills").forEach((section) => {
   observer.observe(section);
 });
+
+// Modal
+// opens the modal
+document.querySelectorAll('.open-modal-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    console.log("click");
+    const modalId = btn.getAttribute('data-modal');
+    const modal = document.getElementById(modalId);
+    modal.classList.add('show');
+    modal.classList.remove('modal-none');
+    const video = modal.querySelector('video');
+    if (video) {
+      video.currentTime = 0; // opcional: para empezar desde el inicio
+      video.play();
+    }
+  });
+});
+
+// Closes modal and stops videos
+document.querySelectorAll('.close-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const modal = btn.closest('.modal');
+    modal.classList.remove('show');
+    modal.classList.add('modal-none');
+    stopVideo(modal);
+  });
+});
+
+// closes modal when clicking outside content
+window.addEventListener('click', (e) => {
+  document.querySelectorAll('.modal.show').forEach(modal => {
+    if (e.target === modal) {
+      modal.classList.remove('show');
+      modal.classList.add('modal-none');
+      stopVideo(modal);
+    }
+  });
+});
+
+// function to stop video
+function stopVideo(modal) {
+  const video = modal.querySelector('video');
+  if (video) {
+    video.pause();
+    video.currentTime = 0;
+  }
+}
