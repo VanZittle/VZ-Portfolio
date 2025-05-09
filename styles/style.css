@@ -170,6 +170,9 @@ body {
 .close-btn:hover {
   color: #ff4b4b;
 }
+#testimonials{
+  display: none;
+}
 .testimonials-wrapper {
   display: flex;
   flex-wrap: wrap;
