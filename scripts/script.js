@@ -81,13 +81,13 @@ document.querySelectorAll("#skills").forEach((section) => {
 
 // Modal
 // opens the modal
-document.querySelectorAll('.open-modal-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const modalId = btn.getAttribute('data-modal');
+document.querySelectorAll(".open-modal-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const modalId = btn.getAttribute("data-modal");
     const modal = document.getElementById(modalId);
-    modal.classList.add('show');
-    modal.classList.remove('modal-none');
-    const video = modal.querySelector('video');
+    modal.classList.add("show");
+    modal.classList.remove("modal-none");
+    const video = modal.querySelector("video");
     if (video) {
       video.currentTime = 0; // opcional: para empezar desde el inicio
       video.play();
@@ -96,21 +96,21 @@ document.querySelectorAll('.open-modal-btn').forEach(btn => {
 });
 
 // Closes modal and stops videos
-document.querySelectorAll('.close-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const modal = btn.closest('.modal');
-    modal.classList.remove('show');
-    modal.classList.add('modal-none');
+document.querySelectorAll(".close-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const modal = btn.closest(".modal");
+    modal.classList.remove("show");
+    modal.classList.add("modal-none");
     stopVideo(modal);
   });
 });
 
 // closes modal when clicking outside content
-window.addEventListener('click', (e) => {
-  document.querySelectorAll('.modal.show').forEach(modal => {
+window.addEventListener("click", (e) => {
+  document.querySelectorAll(".modal.show").forEach((modal) => {
     if (e.target === modal) {
-      modal.classList.remove('show');
-      modal.classList.add('modal-none');
+      modal.classList.remove("show");
+      modal.classList.add("modal-none");
       stopVideo(modal);
     }
   });
@@ -118,7 +118,7 @@ window.addEventListener('click', (e) => {
 
 // function to stop video
 function stopVideo(modal) {
-  const video = modal.querySelector('video');
+  const video = modal.querySelector("video");
   if (video) {
     video.pause();
     video.currentTime = 0;
@@ -128,18 +128,22 @@ function stopVideo(modal) {
 
 var slideIndex = 1;
 showDivs(slideIndex);
-
+T65;
 function plusDivs(n) {
-  showDivs(slideIndex += n);
+  showDivs((slideIndex += n));
 }
 
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+  if (n > x.length) {
+    slideIndex = 1;
   }
-  x[slideIndex-1].style.display = "block";  
+  if (n < 1) {
+    slideIndex = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex - 1].style.display = "block";
 }

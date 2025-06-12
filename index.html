@@ -1,1016 +1,965 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Vanessa Zittle | Creative Technologist | Front-End & Digital Advertising
-    </title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon_io//favicon-16x16.png"
-    />
+    <title>Vanessa Zittle | Creative Technologist | Front-End & Digital Advertising</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io//favicon-16x16.png" />
     <link href="styles/output.css" rel="stylesheet" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <script defer src="scripts/script.js"></script>
-  </head>
-  <body>
-        <!-- Navigation -->
-    <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50" id="test">
-      <div
-        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
-      >
-        <a href="#" class="text-2xl font-bold gradient-text">Vanessa Zittle</a>
-        <div class="hidden md:flex space-x-8">
-          <a href="#home" class="nav-link active-nav text-slate-700 font-medium"
-            >Home</a
-          >
-          <a href="#about" class="nav-link text-slate-700 font-medium">About</a>
-          <a href="#skills" class="nav-link text-slate-700 font-medium"
-            >Skills</a
-          >
-          <a href="#projects" class="nav-link text-slate-700 font-medium"
-            >Projects</a
-          >
-          <a href="#testimonials" class="nav-link text-slate-700 font-medium"
-            >Testimonials</a
-          >
-          <a href="#contact" class="nav-link text-slate-700 font-medium"
-            >Contact</a
-          >
-        </div>
-        <button class="md:hidden text-slate-700" id="mobile-menu-button">
-          <i class="fas fa-bars text-2xl"></i>
-        </button>
-      </div>
+</head>
 
-      <!-- Mobile Menu -->
-      <div class="md:hidden hidden bg-white shadow-lg" id="mobile-menu">
-        <div class="px-6 py-4 flex flex-col space-y-4">
-          <a href="#home" class="nav-link active-nav text-slate-700 font-medium"
-            >Home</a
-          >
-          <a href="#about" class="nav-link text-slate-700 font-medium">About</a>
-          <a href="#skills" class="nav-link text-slate-700 font-medium"
-            >Skills</a
-          >
-          <a href="#projects" class="nav-link text-slate-700 font-medium"
-            >Projects</a
-          >
-          <a href="#testimonials" class="nav-link text-slate-700 font-medium"
-            >Testimonials</a
-          >
-          <a href="#contact" class="nav-link text-slate-700 font-medium"
-            >Contact</a
-          >
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50" id="test">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text">Vanessa Zittle</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link active-nav text-slate-700 font-medium">Home</a>
+                <a href="#about" class="nav-link text-slate-700 font-medium">About</a>
+                <a href="#skills" class="nav-link text-slate-700 font-medium">Skills</a>
+                <a href="#projects" class="nav-link text-slate-700 font-medium">Projects</a>
+                <a href="#testimonials" class="nav-link text-slate-700 font-medium">Testimonials</a>
+                <a href="#contact" class="nav-link text-slate-700 font-medium">Contact</a>
+            </div>
+            <button class="md:hidden text-slate-700" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
         </div>
-      </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white shadow-lg" id="mobile-menu">
+            <div class="px-6 py-4 flex flex-col space-y-4">
+                <a href="#home" class="nav-link active-nav text-slate-700 font-medium">Home</a>
+                <a href="#about" class="nav-link text-slate-700 font-medium">About</a>
+                <a href="#skills" class="nav-link text-slate-700 font-medium">Skills</a>
+                <a href="#projects" class="nav-link text-slate-700 font-medium">Projects</a>
+                <a href="#testimonials" class="nav-link text-slate-700 font-medium">Testimonials</a>
+                <a href="#contact" class="nav-link text-slate-700 font-medium">Contact</a>
+            </div>
+        </div>
     </nav>
 
     <!-- Hero Section -->
-    <section
-      id="home"
-      class="min-h-screen flex items-center relative overflow-hidden"
-    >
-      <div class="nube nube-1"></div>
-      <div class="nube nube-2"></div>
-      <div
-        class="max-w-7xl mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center"
-      >
-        <div class="md:w-1/2 mb-12 md:mb-0">
-          <h1 class="text-4xl md:text-6xl font-bold mb-6">
-            Hi, I'm <span class="gradient-text">Vanessa Zittle</span>
-          </h1>
-          <h2 class="text-2xl md:text-3xl font-medium text-slate-600 mb-8">
-            Web Designer & Developer
-          </h2>
-          <p class="text-lg text-slate-500 mb-8 max-w-lg">
-            I’m a designer and developer with a broad background in creating
-            user-focused digital experiences. From front-end development to
-            managing advertising campaigns, I craft solutions that help
-            businesses grow and thrive in the digital world.
-          </p>
-          <div class="flex space-x-4">
-            <a
-              href="#contact"
-              class="px-8 py-3 bg-indigo-600 text-white font-medium rounded-full hover:bg-indigo-700 transition duration-300 shadow-lg shadow-indigo-500/20"
-            >
-              Get In Touch</a
-            >
-            <a
-              href="#projects"
-              class="px-8 py-3 border-2 border-indigo-600 text-indigo-600 font-medium rounded-full hover:bg-indigo-50 transition duration-300"
-            >
-              View My Work</a
-            >
-          </div>
-        </div>
-        <div class="md:w-1/2 flex justify-center">
-          <div class="relative">
-            <div
-              class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl floaty"
-            >
-              <img
-                src="images/vanztprpl.png"
-                alt="Vanessa Zittle"
-                class="w-full h-full object-cover"
-              />
-            </div>
-            <div
-              class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg"
-            >
-              <div class="flex items-center">
-                <div
-                  class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-3"
-                >
-                  <i class="fas fa-medal text-xl"></i>
+    <section id="home" class="min-h-screen flex items-center relative overflow-hidden">
+        <div class="nube nube-1"></div>
+        <div class="nube nube-2"></div>
+        <div class="max-w-7xl mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Hi, I'm <span class="gradient-text">Vanessa Zittle</span>
+                </h1>
+                <h2 class="text-2xl md:text-3xl font-medium text-slate-600 mb-8">
+                    Web Designer & Developer
+                </h2>
+                <p class="text-lg text-slate-500 mb-8 max-w-lg">
+                    I’m a designer and developer with a broad background in creating
+                    user-focused digital experiences. From front-end development to
+                    managing advertising campaigns, I craft solutions that help
+                    businesses grow and thrive in the digital world.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact"
+                        class="px-8 py-3 bg-indigo-600 text-white font-medium rounded-full hover:bg-indigo-700 transition duration-300 shadow-lg shadow-indigo-500/20">
+                        Get In Touch</a>
+                    <a href="#projects"
+                        class="px-8 py-3 border-2 border-indigo-600 text-indigo-600 font-medium rounded-full hover:bg-indigo-50 transition duration-300">
+                        View My Work</a>
                 </div>
-                <div>
-                  <p class="font-bold">8+ Years</p>
-                  <p class="text-sm text-slate-500">Experience</p>
-                </div>
-              </div>
             </div>
-          </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div
+                        class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl floaty">
+                        <img src="images/vanztprpl.png" alt="Vanessa Zittle" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg">
+                        <div class="flex items-center">
+                            <div
+                                class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-3">
+                                <i class="fas fa-medal text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold">8+ Years</p>
+                                <p class="text-sm text-slate-500">Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-slate-50">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            About <span class="gradient-text">Me</span>
-          </h2>
-          <div class="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
-          <p class="text-lg text-slate-500 max-w-3xl mx-auto">
-            Get to know the person behind all this!
-          </p>
-        </div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    About <span class="gradient-text">Me</span>
+                </h2>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
+                <p class="text-lg text-slate-500 max-w-3xl mx-auto">
+                    Get to know the person behind all this!
+                </p>
+            </div>
 
-        <div class="flex flex-col md:flex-row items-center">
-          <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
-            <div class="relative">
-              <img
-                src="images/imgDesk.png"
-                alt="Working"
-                class="rounded-xl shadow-xl"
-              />
-              <div
-                class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg"
-              >
-                <div class="flex items-center">
-                  <div
-                    class="w-14 h-14 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4"
-                  >
-                    <i class="fas fa-lightbulb text-2xl"></i>
-                  </div>
-                  <div>
-                    <p class="font-bold text-lg">Creative Solutions</p>
-                    <p class="text-sm text-slate-500">
-                      Unique results for every need
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <div class="relative">
+                        <img src="images/imgDesk.png" alt="Working" class="rounded-xl shadow-xl" />
+                        <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
+                            <div class="flex items-center">
+                                <div
+                                    class="w-14 h-14 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4">
+                                    <i class="fas fa-lightbulb text-2xl"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-lg">Creative Solutions</p>
+                                    <p class="text-sm text-slate-500">
+                                        Unique results for every need
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6">Who I Am</h3>
+                    <p class="text-slate-600 mb-4">
+                        I’m a web designer and developer with experience in creating
+                        digital experiences that combine aesthetics with functionality. I
+                        specialize in responsive design, front-end development, and UI/UX
+                        design, ensuring seamless and intuitive user interactions.
                     </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="md:w-1/2">
-            <h3 class="text-2xl font-bold mb-6">Who I Am</h3>
-            <p class="text-slate-600 mb-4">
-              I’m a web designer and developer with experience in creating
-              digital experiences that combine aesthetics with functionality. I
-              specialize in responsive design, front-end development, and UI/UX
-              design, ensuring seamless and intuitive user interactions.
-            </p>
-            <p class="text-slate-600 mb-4">
-              In addition to my expertise in web design, I have a strong
-              background in digital advertising and campaign management,
-              particularly in Amazon Ad Server. My goal is to help businesses
-              establish a compelling online presence that drives growth and
-              aligns with their marketing and business goals.
-            </p>
-            <p class="text-slate-600 mb-8">
-              I’m actively seeking opportunities in web design, front-end
-              development, and digital marketing roles, where I can leverage
-              both my creative and technical skills to make a meaningful impact.
-            </p>
-            <div class="grid grid-cols-2 gap-6 mb-8">
-              <div class="flex items-center">
-                <div
-                  class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4"
-                >
-                  <i class="fas fa-palette"></i>
-                </div>
-                <div>
-                  <p class="font-medium">Web Design</p>
-                  <p class="text-sm text-slate-500">
-                    Useful and attractive interfaces
-                  </p>
-                </div>
-              </div>
-              <div class="flex items-center">
-                <div
-                  class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4"
-                >
-                  <i class="fas fa-code"></i>
-                </div>
-                <div>
-                  <p class="font-medium">Front-end Development</p>
-                  <p class="text-sm text-slate-500">Clean code</p>
-                </div>
-              </div>
-              <div class="flex items-center">
-                <div
-                  class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4"
-                >
-                  <i class="fa-solid fa-rocket"></i>
-                </div>
-                <div>
-                  <p class="font-medium">Expertise in Digital ads</p>
-                  <p class="text-sm text-slate-500">Design and Strategies</p>
-                </div>
-              </div>
-              <div class="flex items-center">
-                <div
-                  class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4"
-                >
-                  <i class="fa-solid fa-headset"></i>
-                </div>
-                <div>
-                  <p class="font-medium">Technical Customer Support</p>
-                  <p class="text-sm text-slate-500">
-                    Providing solutions and trainings
-                  </p>
-                </div>
-              </div>
-            </div>
+                    <p class="text-slate-600 mb-4">
+                        In addition to my expertise in web design, I have a strong
+                        background in digital advertising and campaign management,
+                        particularly in Amazon Ad Server. My goal is to help businesses
+                        establish a compelling online presence that drives growth and
+                        aligns with their marketing and business goals.
+                    </p>
+                    <p class="text-slate-600 mb-8">
+                        I’m actively seeking opportunities in web design, front-end
+                        development, and digital marketing roles, where I can leverage
+                        both my creative and technical skills to make a meaningful impact.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-center">
+                            <div
+                                class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">Web Design</p>
+                                <p class="text-sm text-slate-500">
+                                    Useful and attractive interfaces
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div
+                                class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">Front-end Development</p>
+                                <p class="text-sm text-slate-500">Clean code</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div
+                                class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">Expertise in Digital ads</p>
+                                <p class="text-sm text-slate-500">Design and Strategies</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div
+                                class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">Technical Customer Support</p>
+                                <p class="text-sm text-slate-500">
+                                    Providing solutions and trainings
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-            <a
-              href="images/VanessaZittle_Resume.pdf"
-              download
-              target="_blank"
-              class="inline-flex items-center text-indigo-600 font-medium"
-            >
-              Download My Resume<i class="fas fa-download ml-2"></i
-            ></a>
-          </div>
+                    <a href="images/VanessaZittle_Resume.pdf" download target="_blank"
+                        class="inline-flex items-center text-indigo-600 font-medium">
+                        Download My Resume<i class="fas fa-download ml-2"></i></a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="py-20">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            My <span class="gradient-text">Skills</span>
-          </h2>
-          <div class="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
-          <p class="text-lg text-slate-500 max-w-3xl mx-auto">
-            The tools and technologies I use to build, design, and deliver
-            results.
-          </p>
-        </div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    My <span class="gradient-text">Skills</span>
+                </h2>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
+                <p class="text-lg text-slate-500 max-w-3xl mx-auto">
+                    The tools and technologies I use to build, design, and deliver
+                    results.
+                </p>
+            </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div class="group-of-skills">
-            <h3 class="text-xl font-bold mb-6">Design Skills</h3>
-            <div class="space-y-6">
-              <div class="skill">
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium">Web Design</span>
-                  <span class="text-indigo-600 font-bold">90%</span>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="group-of-skills">
+                    <h3 class="text-xl font-bold mb-6">Design Skills</h3>
+                    <div class="space-y-6">
+                        <div class="skill">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Web Design</span>
+                                <span class="text-indigo-600 font-bold">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Wireframing</span>
+                                <span class="text-indigo-600 font-bold">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Prototyping</span>
+                                <span class="text-indigo-600 font-bold">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 90%"></div>
+                <div class="group-of-skills">
+                    <h3 class="text-xl font-bold mb-6">Development Skills</h3>
+                    <div class="space-y-6">
+                        <div class="skill">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">HTML5/CSS3</span>
+                                <span class="text-indigo-600 font-bold">98%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 98%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">JavaScript</span>
+                                <span class="text-indigo-600 font-bold">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">React</span>
+                                <span class="text-indigo-600 font-bold">55%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 55%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="skill">
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium">Wireframing</span>
-                  <span class="text-indigo-600 font-bold">90%</span>
+                <div class="group-of-skills">
+                    <h3 class="text-xl font-bold mb-6">Ad Tech</h3>
+                    <div class="space-y-6">
+                        <div class="skill">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Ad dev and animation</span>
+                                <span class="text-indigo-600 font-bold">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 98%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Customer Support</span>
+                                <span class="text-indigo-600 font-bold">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Campaign Strategy</span>
+                                <span class="text-indigo-600 font-bold">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 90%"></div>
-                </div>
-              </div>
-              <div class="skill">
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium">Prototyping</span>
-                  <span class="text-indigo-600 font-bold">85%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 85%"></div>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="group-of-skills">
-            <h3 class="text-xl font-bold mb-6">Development Skills</h3>
-            <div class="space-y-6">
-              <div class="skill">
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium">HTML5/CSS3</span>
-                  <span class="text-indigo-600 font-bold">98%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 98%"></div>
-                </div>
-              </div>
-              <div class="skill">
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium">JavaScript</span>
-                  <span class="text-indigo-600 font-bold">75%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 75%"></div>
-                </div>
-              </div>
-              <div class="skill">
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium">React</span>
-                  <span class="text-indigo-600 font-bold">55%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 55%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="group-of-skills">
-            <h3 class="text-xl font-bold mb-6">Ad Tech</h3>
-            <div class="space-y-6">
-              <div class="skill">
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium">Ad dev and animation</span>
-                  <span class="text-indigo-600 font-bold">95%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 98%"></div>
-                </div>
-              </div>
-              <div class="skill">
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium">Customer Support</span>
-                  <span class="text-indigo-600 font-bold">90%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 75%"></div>
-                </div>
-              </div>
-              <div class="skill">
-                <div class="flex justify-between mb-2">
-                  <span class="font-medium">Campaign Strategy</span>
-                  <span class="text-indigo-600 font-bold">85%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 85%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="mt-16">
-          <h3 class="text-xl font-bold mb-8 text-center">Tools I Use</h3>
-          <div class="grid grid-cols-3 md:grid-cols-6 gap-8">
-            <div class="flex flex-col items-center">
-              <div
-                class="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center mb-2"
-              >
-                <i class="fas fa-pen-to-square text-3xl text-blue-600"></i>
-              </div>
-              <span class="text-sm font-medium">Photoshop</span>
+            <div class="mt-16">
+                <h3 class="text-xl font-bold mb-8 text-center">Tools I Use</h3>
+                <div class="grid grid-cols-3 md:grid-cols-6 gap-8">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center mb-2">
+                            <i class="fas fa-pen-to-square text-3xl text-blue-600"></i>
+                        </div>
+                        <span class="text-sm font-medium">Photoshop</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center mb-2">
+                            <i class="fas fa-code text-3xl text-yellow-400"></i>
+                        </div>
+                        <span class="text-sm font-medium">Visual Studio</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center mb-2">
+                            <i class="fab fa-amazon text-3xl text-indigo-500"></i>
+                        </div>
+                        <span class="text-sm font-medium">Amazon Ads</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center mb-2">
+                            <i class="fab fa-github text-3xl text-orange-600"></i>
+                        </div>
+                        <span class="text-sm font-medium">Github</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center mb-2">
+                            <i class="fab fa-react text-3xl text-blue-500"></i>
+                        </div>
+                        <span class="text-sm font-medium">React</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center mb-2">
+                            <i class="fab fa-figma text-3xl text-indigo-600"></i>
+                        </div>
+                        <span class="text-sm font-medium">Figma</span>
+                    </div>
+                </div>
             </div>
-            <div class="flex flex-col items-center">
-              <div
-                class="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center mb-2"
-              >
-                <i class="fas fa-code text-3xl text-yellow-400"></i>
-              </div>
-              <span class="text-sm font-medium">Visual Studio</span>
-            </div>
-            <div class="flex flex-col items-center">
-              <div
-                class="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center mb-2"
-              >
-                <i class="fab fa-amazon text-3xl text-indigo-500"></i>
-              </div>
-              <span class="text-sm font-medium">Amazon Ads</span>
-            </div>
-            <div class="flex flex-col items-center">
-              <div
-                class="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center mb-2"
-              >
-                <i class="fab fa-github text-3xl text-orange-600"></i>
-              </div>
-              <span class="text-sm font-medium">Github</span>
-            </div>
-            <div class="flex flex-col items-center">
-              <div
-                class="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center mb-2"
-              >
-                <i class="fab fa-react text-3xl text-blue-500"></i>
-              </div>
-              <span class="text-sm font-medium">React</span>
-            </div>
-            <div class="flex flex-col items-center">
-              <div
-                class="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center mb-2"
-              >
-                <i class="fab fa-figma text-3xl text-indigo-600"></i>
-              </div>
-              <span class="text-sm font-medium">Figma</span>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="py-20 bg-slate-50">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            My <span class="gradient-text">Projects</span>
-          </h2>
-          <div class="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
-          <p class="text-lg text-slate-500 max-w-3xl mx-auto">
-            A selection of my recent work across various industries
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Project 1 -->
-            <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
-                <div class="relative overflow-hidden h-60">
-                <img src="images/projects/concertmThumbn.jpg" alt="E-commerce Website" class="w-full h-full object-cover transition duration-500 hover:scale-110" />
-                <div class="absolute inset-0 bg-indigo-600/10 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
-                    <a href="https://concertapp-6vn6.onrender.com/" target="_blank" class="bg-white text-indigo-600 px-6 py-2 rounded-full font-medium">View Details</a>
-                </div>
-                </div>
-                <div class="p-6">
-                <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-xl font-bold">Concert Matchup</h3>
-                    <span class="bg-indigo-100 text-indigo-600 text-xs px-2 py-1 rounded">UI/Front-end</span>
-                </div>
-                <p class="text-slate-500 mb-4">
-                    This app enables event organizers to gauge public interest in
-                    various artists through polls. Please use these credentials:
-                    vane@gmail.com / 12345678
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    My <span class="gradient-text">Projects</span>
+                </h2>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
+                <p class="text-lg text-slate-500 max-w-3xl mx-auto">
+                    A selection of my recent work across various industries
                 </p>
-                <div class="flex justify-between items-center">
-                    <a href="https://concertapp-6vn6.onrender.com/" target="_blank" class="text-indigo-600 font-medium flex items-center">Check it out<i class="fas fa-external-link-alt ml-2 text-sm"></i>
-                    </a>
-                    <div class="flex space-x-2">
-                    <i class="fab fa-react text-blue-500"></i>
-                    <i class="fab fa-js text-yellow-400"></i>
-                    <i class="fab fa-bootstrap text-purple-600"></i>
-                    </div>
-                </div>
-                </div>
             </div>
 
-            <!-- Project 2 -->
-            <div class="project-card bg-white rounded-xl overflow-hidden shadow-md" >
-                <div class="relative overflow-hidden h-60">
-                <img src="images/projects/haikuThumbn.jpg" alt="Mobile App" class="w-full h-full object-cover transition duration-500 hover:scale-110" />
-                <div class="absolute inset-0 bg-indigo-600/10 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300" >
-                    <a href="https://haikuhub.onrender.com/" target="_blank" class="bg-white text-indigo-600 px-6 py-2 rounded-full font-medium">View Details</a>
-                </div>
-                </div>
-                <div class="p-6">
-                <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-xl font-bold">Haiku Hub</h3>
-                    <span class="bg-indigo-100 text-indigo-600 text-xs px-2 py-1 rounded">UX/UI/Front-end</span>
-                </div>
-                <p class="text-slate-500 mb-4">
-                    Web application that enables users to compose, share, and
-                    explore haiku poetry.
-                </p>
-                <div class="flex justify-between items-center">
-                    <a href="https://haikuhub.onrender.com/" target="_blank" class="text-indigo-600 font-medium flex items-center">Explore<i class="fas fa-external-link-alt ml-2 text-sm"></i>
-                    </a>
-                    <div class="flex space-x-2">
-                    <i class="fab fa-react text-blue-500"></i>
-                    <i class="fab fa-node text-orange-500"></i>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="relative overflow-hidden h-60">
+                        <img src="images/projects/concertmThumbn.jpg" alt="E-commerce Website"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110" />
+                        <div
+                            class="absolute inset-0 bg-indigo-600/10 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                            <a href="https://concertapp-6vn6.onrender.com/" target="_blank"
+                                class="bg-white text-indigo-600 px-6 py-2 rounded-full font-medium">View Details</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Concert Matchup</h3>
+                            <span class="bg-indigo-100 text-indigo-600 text-xs px-2 py-1 rounded">UI/Front-end</span>
+                        </div>
+                        <p class="text-slate-500 mb-4">
+                            This app enables event organizers to gauge public interest in
+                            various artists through polls. Please use these credentials:
+                            vane@gmail.com / 12345678
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://concertapp-6vn6.onrender.com/" target="_blank"
+                                class="text-indigo-600 font-medium flex items-center">Check it out<i
+                                    class="fas fa-external-link-alt ml-2 text-sm"></i>
+                            </a>
+                            <div class="flex space-x-2">
+                                <i class="fab fa-react text-blue-500"></i>
+                                <i class="fab fa-js text-yellow-400"></i>
+                                <i class="fab fa-bootstrap text-purple-600"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                </div>
-            </div>
 
-            <!-- Project 3 -->
-            <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
-                <div class="relative overflow-hidden h-60">
-                <img src="images/projects/weatherThumbn.jpg" alt="Dashboard" class="w-full h-full object-cover transition duration-500 hover:scale-110" />
-                <div class="absolute inset-0 bg-indigo-600/10 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300" >
-                    <a href="https://vanzittle.github.io/MyWeatherApp/" target="_blank" class="bg-white text-indigo-600 px-6 py-2 rounded-full font-medium" >View Details</a>
-                </div>
-                </div>
-                <div class="p-6">
-                <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-xl font-bold">SkyScope</h3>
-                    <span class="bg-indigo-100 text-indigo-600 text-xs px-2 py-1 rounded">Web App</span>
-                </div>
-                <p class="text-slate-500 mb-4">
-                    Web application that provides real-time weather information
-                    based on user-inputted city names.
-                </p>
-                <div class="flex justify-between items-center">
-                    <a href="https://vanzittle.github.io/MyWeatherApp/" target="_blank" class="text-indigo-600 font-medium flex items-center" > Live Preview <i class="fas fa-external-link-alt ml-2 text-sm"></i>
-                    </a>
-                    <div class="flex space-x-2">
-                    <i class="fab fa-html5 text-blue-500"></i>
-                    <i class="fab fa-js text-green-500"></i>
-                    <i class="fab fa-github text-gray-500"></i>
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="relative overflow-hidden h-60">
+                        <img src="images/projects/haikuThumbn.jpg" alt="Mobile App"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110" />
+                        <div
+                            class="absolute inset-0 bg-indigo-600/10 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                            <a href="https://haikuhub.onrender.com/" target="_blank"
+                                class="bg-white text-indigo-600 px-6 py-2 rounded-full font-medium">View Details</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Haiku Hub</h3>
+                            <span class="bg-indigo-100 text-indigo-600 text-xs px-2 py-1 rounded">UX/UI/Front-end</span>
+                        </div>
+                        <p class="text-slate-500 mb-4">
+                            Web application that enables users to compose, share, and
+                            explore haiku poetry.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://haikuhub.onrender.com/" target="_blank"
+                                class="text-indigo-600 font-medium flex items-center">Explore<i
+                                    class="fas fa-external-link-alt ml-2 text-sm"></i>
+                            </a>
+                            <div class="flex space-x-2">
+                                <i class="fab fa-react text-blue-500"></i>
+                                <i class="fab fa-node text-orange-500"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                </div>
-            </div>
 
-            <!-- Project 4 -->
-            <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
-                <div class="relative overflow-hidden h-60">
-                <img src="images/projects/honey_thumbn.jpg" alt="Dashboard" class="w-full h-full object-cover transition duration-500 hover:scale-110" />
-                <div class="absolute inset-0 bg-indigo-600/10 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300" >
-                    <button class="bg-white text-indigo-600 px-6 py-2 rounded-full font-medium open-modal-btn" data-modal="modal1">Watch video</button>
-                </div>
-                </div>
-                <div class="p-6">
-                <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-xl font-bold">Truth to bee told</h3>
-                    <span class="bg-indigo-100 text-indigo-600 text-xs px-2 py-1 rounded">VPAID Ad</span>
-                </div>
-                <p class="text-slate-500 mb-4">
-                    Interactive VPAID ad demo featuring video, animations, and navigable sections. Created to showcase the creative and technical potential of dynamic ad experiences.
-                </p>
-                <div class="flex justify-between items-center">
-                    <button class="text-indigo-600 font-medium flex items-center open-modal-btn" data-modal="modal1"> Live Preview <i class="fas fa-external-link-alt ml-2 text-sm"></i>
-                    </button>
-                    <div class="flex space-x-2">
-                    <i class="fab fa-html5 text-blue-500"></i>
-                    <i class="fab fa-js text-green-500"></i>
-                    <i class="fa-solid fa-server text-gray-400"></i>
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="relative overflow-hidden h-60">
+                        <img src="images/projects/weatherThumbn.jpg" alt="Dashboard"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110" />
+                        <div
+                            class="absolute inset-0 bg-indigo-600/10 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                            <a href="https://vanzittle.github.io/MyWeatherApp/" target="_blank"
+                                class="bg-white text-indigo-600 px-6 py-2 rounded-full font-medium">View Details</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">SkyScope</h3>
+                            <span class="bg-indigo-100 text-indigo-600 text-xs px-2 py-1 rounded">Web App</span>
+                        </div>
+                        <p class="text-slate-500 mb-4">
+                            Web application that provides real-time weather information
+                            based on user-inputted city names.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://vanzittle.github.io/MyWeatherApp/" target="_blank"
+                                class="text-indigo-600 font-medium flex items-center"> Live Preview <i
+                                    class="fas fa-external-link-alt ml-2 text-sm"></i>
+                            </a>
+                            <div class="flex space-x-2">
+                                <i class="fab fa-html5 text-blue-500"></i>
+                                <i class="fab fa-js text-green-500"></i>
+                                <i class="fab fa-github text-gray-500"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                </div>
-            </div>
 
-            <!-- Project 5 -->
-            <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
-                <div class="relative overflow-hidden h-60">
-                <img src="images/projects/zara_thumbn.jpg" alt="video thumbnail " class="w-full h-full object-cover transition duration-500 hover:scale-110" />
-                <div class="absolute inset-0 bg-indigo-600/10 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300" >
-                    <button class="bg-white text-indigo-600 px-6 py-2 rounded-full font-medium open-modal-btn" data-modal="modal2">Watch video</button>
-                </div>
-                </div>
-                <div class="p-6">
-                <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-xl font-bold">Zara</h3>
-                    <span class="bg-indigo-100 text-indigo-600 text-xs px-2 py-1 rounded">VPAID Ad</span>
-                </div>
-                <p class="text-slate-500 mb-4">
-                    Interactive Video that displays boxes with price, description, and CTA buttons as the video plays, creating a direct and engaging shopping experience.
-                </p>
-                <div class="flex justify-between items-center">
-                    <button class="text-indigo-600 font-medium flex items-center open-modal-btn" data-modal="modal1"> Live Preview <i class="fas fa-external-link-alt ml-2 text-sm"></i>
-                    </button>
-                    <div class="flex space-x-2">
-                    <i class="fab fa-html5 text-blue-500"></i>
-                    <i class="fab fa-js text-green-500"></i>
-                    <i class="fa-solid fa-server text-gray-400"></i>
+                <!-- Project 4 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="relative overflow-hidden h-60">
+                        <img src="images/projects/honey_thumbn.jpg" alt="Dashboard"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110" />
+                        <div
+                            class="absolute inset-0 bg-indigo-600/10 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                            <button class="bg-white text-indigo-600 px-6 py-2 rounded-full font-medium open-modal-btn"
+                                data-modal="modal1">Watch video</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Truth to bee told</h3>
+                            <span class="bg-indigo-100 text-indigo-600 text-xs px-2 py-1 rounded">VPAID Ad</span>
+                        </div>
+                        <p class="text-slate-500 mb-4">
+                            Interactive VPAID ad demo featuring video, animations, and navigable sections. Created to
+                            showcase the creative and technical potential of dynamic ad experiences.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <button class="text-indigo-600 font-medium flex items-center open-modal-btn"
+                                data-modal="modal1"> Live Preview <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                            </button>
+                            <div class="flex space-x-2">
+                                <i class="fab fa-html5 text-blue-500"></i>
+                                <i class="fab fa-js text-green-500"></i>
+                                <i class="fa-solid fa-server text-gray-400"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                </div>
-            </div>
 
-            <!-- Project 6 -->
-            <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
-                <div class="relative overflow-hidden h-60">
-                <img src="images/projects/dco_thumbn.jpg" alt="video thumbnail " class="w-full h-full object-cover transition duration-500 hover:scale-110" />
-                <div class="absolute inset-0 bg-indigo-600/10 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300" >
-                    <button class="bg-white text-indigo-600 px-6 py-2 rounded-full font-medium open-modal-btn" data-modal="modal3">Watch video</button>
-                </div>
-                </div>
-                <div class="p-6">
-                <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-xl font-bold">DCO demo</h3>
-                    <span class="bg-indigo-100 text-indigo-600 text-xs px-2 py-1 rounded">DCO Ad</span>
-                </div>
-                <p class="text-slate-500 mb-4">
-                    Interactive demo showcasing Dynamic Creative Optimization capabilities. Simulates personalized ads with content that adapts based on user data, highlighting how real-time creative variation can boost relevance and performance.
-                </p>
-                <div class="flex justify-between items-center">
-                    <button class="text-indigo-600 font-medium flex items-center open-modal-btn" data-modal="modal1"> Live Preview <i class="fas fa-external-link-alt ml-2 text-sm"></i>
-                    </button>
-                    <div class="flex space-x-2">
-                    <i class="fab fa-html5 text-blue-500"></i>
-                    <i class="fab fa-js text-green-500"></i>
-                    <i class="fa-solid fa-server text-gray-400"></i>
+                <!-- Project 5 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="relative overflow-hidden h-60">
+                        <img src="images/projects/zara_thumbn.jpg" alt="video thumbnail "
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110" />
+                        <div
+                            class="absolute inset-0 bg-indigo-600/10 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                            <button class="bg-white text-indigo-600 px-6 py-2 rounded-full font-medium open-modal-btn"
+                                data-modal="modal2">Watch video</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Zara</h3>
+                            <span class="bg-indigo-100 text-indigo-600 text-xs px-2 py-1 rounded">VPAID Ad</span>
+                        </div>
+                        <p class="text-slate-500 mb-4">
+                            Interactive Video that displays boxes with price, description, and CTA buttons as the video
+                            plays, creating a direct and engaging shopping experience.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <button class="text-indigo-600 font-medium flex items-center open-modal-btn"
+                                data-modal="modal1"> Live Preview <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                            </button>
+                            <div class="flex space-x-2">
+                                <i class="fab fa-html5 text-blue-500"></i>
+                                <i class="fab fa-js text-green-500"></i>
+                                <i class="fa-solid fa-server text-gray-400"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                </div>
-            </div>
 
-            <!-- Project 7 -->
-            <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
-                <div class="relative overflow-hidden h-60">
-                <img src="images/projects/bulb-rich-300x600_thumbn.jpg" alt="thumbnail " class="w-full h-full object-cover transition duration-500 hover:scale-110" />
-                <div class="absolute inset-0 bg-indigo-600/10 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300" >
-                    <button class="bg-white text-indigo-600 px-6 py-2 rounded-full font-medium open-modal-btn" data-modal="modal4">Watch video</button>
-                </div>
-                </div>
-                <div class="p-6">
-                <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-xl font-bold">Featured Ad</h3>
-                    <span class="bg-indigo-100 text-indigo-600 text-xs px-2 py-1 rounded">Rich Media</span>
-                </div>
-                <p class="text-slate-500 mb-4">
-                    Ad reated to showcase Rich Media capabilities. Features interactive elements like video, cross-slider animations, and galleries, illustrating how to capture attention through immersive ad experiences.
-                </p>
-                <div class="flex justify-between items-center">
-                    <button class="text-indigo-600 font-medium flex items-center open-modal-btn" data-modal="modal1"> Live Preview <i class="fas fa-external-link-alt ml-2 text-sm"></i>
-                    </button>
-                    <div class="flex space-x-2">
-                    <i class="fab fa-html5 text-blue-500"></i>
-                    <i class="fab fa-js text-green-500"></i>
-                    <i class="fa-solid fa-server text-gray-400"></i>
+                <!-- Project 6 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="relative overflow-hidden h-60">
+                        <img src="images/projects/dco_thumbn.jpg" alt="video thumbnail "
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110" />
+                        <div
+                            class="absolute inset-0 bg-indigo-600/10 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                            <button class="bg-white text-indigo-600 px-6 py-2 rounded-full font-medium open-modal-btn"
+                                data-modal="modal3">Watch video</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">DCO demo</h3>
+                            <span class="bg-indigo-100 text-indigo-600 text-xs px-2 py-1 rounded">DCO Ad</span>
+                        </div>
+                        <p class="text-slate-500 mb-4">
+                            Interactive demo showcasing Dynamic Creative Optimization capabilities. Simulates
+                            personalized ads with content that adapts based on user data, highlighting how real-time
+                            creative variation can boost relevance and performance.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <button class="text-indigo-600 font-medium flex items-center open-modal-btn"
+                                data-modal="modal1"> Live Preview <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                            </button>
+                            <div class="flex space-x-2">
+                                <i class="fab fa-html5 text-blue-500"></i>
+                                <i class="fab fa-js text-green-500"></i>
+                                <i class="fa-solid fa-server text-gray-400"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                </div>
-            </div>
 
-            <!-- Project 8 -->
-            <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
-                <div class="relative overflow-hidden h-60">
-                <img src="images/projects/slider_thumbn.jpg" alt="thumbnail " class="w-full h-full object-cover transition duration-500 hover:scale-110" />
-                <div class="absolute inset-0 bg-indigo-600/10 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300" >
-                    <button class="bg-white text-indigo-600 px-6 py-2 rounded-full font-medium open-modal-btn" data-modal="modal5">Take a look</button>
-                </div>
-                </div>
-                <div class="p-6">
-                <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-xl font-bold">Creative Ad Gallery</h3>
-                    <span class="bg-indigo-100 text-indigo-600 text-xs px-2 py-1 rounded">Digital ads</span>
-                </div>
-                <p class="text-slate-500 mb-4">
-                    Gallery of visually engaging ad projects developed throughout my professional career.
-                </p>
-                <div class="flex justify-between items-center">
-                    <button class="text-indigo-600 font-medium flex items-center open-modal-btn" data-modal="modal1"> Watch'em all! <i class="fas fa-external-link-alt ml-2 text-sm"></i>
-                    </button>
-                    <div class="flex space-x-2">
-                    <i class="fab fa-html5 text-blue-500"></i>
-                    <i class="fab fa-js text-green-500"></i>
-                    <i class="fa-solid fa-server text-gray-400"></i>
+                <!-- Project 7 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="relative overflow-hidden h-60">
+                        <img src="images/projects/bulb-rich-300x600_thumbn.jpg" alt="thumbnail "
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110" />
+                        <div
+                            class="absolute inset-0 bg-indigo-600/10 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                            <button class="bg-white text-indigo-600 px-6 py-2 rounded-full font-medium open-modal-btn"
+                                data-modal="modal4">Watch video</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Featured Ad</h3>
+                            <span class="bg-indigo-100 text-indigo-600 text-xs px-2 py-1 rounded">Rich Media</span>
+                        </div>
+                        <p class="text-slate-500 mb-4">
+                            Ad reated to showcase Rich Media capabilities. Features interactive elements like video,
+                            cross-slider animations, and galleries, illustrating how to capture attention through
+                            immersive ad experiences.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <button class="text-indigo-600 font-medium flex items-center open-modal-btn"
+                                data-modal="modal1"> Live Preview <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                            </button>
+                            <div class="flex space-x-2">
+                                <i class="fab fa-html5 text-blue-500"></i>
+                                <i class="fab fa-js text-green-500"></i>
+                                <i class="fa-solid fa-server text-gray-400"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Project 8 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="relative overflow-hidden h-60">
+                        <img src="images/projects/slider_thumbn.jpg" alt="thumbnail "
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110" />
+                        <div
+                            class="absolute inset-0 bg-indigo-600/10 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                            <button class="bg-white text-indigo-600 px-6 py-2 rounded-full font-medium open-modal-btn"
+                                data-modal="modal5">Take a look</button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Creative Ad Gallery</h3>
+                            <span class="bg-indigo-100 text-indigo-600 text-xs px-2 py-1 rounded">Digital ads</span>
+                        </div>
+                        <p class="text-slate-500 mb-4">
+                            Gallery of visually engaging ad projects developed throughout my professional career.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <button class="text-indigo-600 font-medium flex items-center open-modal-btn"
+                                data-modal="modal1"> Watch'em all! <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                            </button>
+                            <div class="flex space-x-2">
+                                <i class="fab fa-html5 text-blue-500"></i>
+                                <i class="fab fa-js text-green-500"></i>
+                                <i class="fa-solid fa-server text-gray-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Modals -->
+            <div id="modal1" class="modal modal-none">
+                <div class="modal-content">
+                    <i class="fa-solid fa-xmark close-btn"></i>
+                    <video controls class="modal-video">
+                        <source src="images/projects/honey.mp4" type="video/mp4" autoplay>
+                        Browser cannot play the video.
+                    </video>
                 </div>
             </div>
+            <div id="modal2" class="modal modal-none">
+                <div class="modal-content">
+                    <i class="fa-solid fa-xmark close-btn"></i>
+                    <video controls class="modal-video">
+                        <source src="images/projects/zaraVpaid.mp4" type="video/mp4" autoplay>
+                        Browser cannot play the video.
+                    </video>
+                </div>
+            </div>
+            <div id="modal3" class="modal modal-none">
+                <div class="modal-content">
+                    <i class="fa-solid fa-xmark close-btn"></i>
+                    <video controls class="modal-video">
+                        <source src="images/projects/dco.mp4" type="video/mp4" autoplay>
+                        Browser cannot play the video.
+                    </video>
+                </div>
+            </div>
+            <div id="modal4" class="modal modal-none">
+                <div class="modal-content">
+                    <i class="fa-solid fa-xmark close-btn"></i>
+                    <video controls class="modal-video">
+                        <source src="images/projects/bulb-rich-300x600.mp4" type="video/mp4" autoplay>
+                        Browser cannot play the video.
+                    </video>
+                </div>
+            </div>
+            <div id="modal5" class="modal modal-none">
+                <div class="modal-content2">
+                    <i class="fa-solid fa-xmark close-btn"></i>
+                    <img class="mySlides" src="images/projects/slider/xx_1.jpg" style="width:100%">
+                    <img class="mySlides" src="images/projects/slider/xx_2.jpg" style="width:100%">
+                    <img class="mySlides" src="images/projects/slider/xx_3.jpg" style="width:100%">
+                    <img class="mySlides" src="images/projects/slider/DCOstrongbow.jpg" style="width:100%">
+                    <img class="mySlides" src="images/projects/slider/formatsSol.jpg" style="width:100%">
+                    <img class="mySlides" src="images/projects/slider/DCOmccormick.jpg" style="width:100%">
+                    <button class="slider-button slider-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="slider-button slider-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
 
-        </div>
- <!-- Modals -->
-    <div id="modal1" class="modal modal-none">
-        <div class="modal-content">
-          <i class="fa-solid fa-xmark close-btn"></i>
-          <video controls  class="modal-video">
-            <source src="images/projects/honey.mp4" type="video/mp4" autoplay>
-            Browser cannot play the video.
-          </video>
-        </div>
-    </div>
-    <div id="modal2" class="modal modal-none">
-        <div class="modal-content">
-          <i class="fa-solid fa-xmark close-btn"></i>
-          <video controls  class="modal-video">
-            <source src="images/projects/zaraVpaid.mp4" type="video/mp4" autoplay>
-            Browser cannot play the video.
-          </video>
-        </div>
-    </div>
-    <div id="modal3" class="modal modal-none">
-        <div class="modal-content">
-          <i class="fa-solid fa-xmark close-btn"></i>
-          <video controls  class="modal-video">
-            <source src="images/projects/dco.mp4" type="video/mp4" autoplay>
-            Browser cannot play the video.
-          </video>
-        </div>
-    </div>
-    <div id="modal4" class="modal modal-none">
-        <div class="modal-content">
-          <i class="fa-solid fa-xmark close-btn"></i>
-          <video controls  class="modal-video">
-            <source src="images/projects/bulb-rich-300x600.mp4" type="video/mp4" autoplay>
-            Browser cannot play the video.
-          </video>
-        </div>
-    </div>
-    <div id="modal5" class="modal modal-none">
-        <div class="modal-content2">
-            <i class="fa-solid fa-xmark close-btn"></i>
-            <img class="mySlides" src="images/projects/slider/xx_1.jpg" style="width:100%">
-            <img class="mySlides" src="images/projects/slider/xx_2.jpg" style="width:100%">
-            <img class="mySlides" src="images/projects/slider/xx_3.jpg" style="width:100%">
-            <img class="mySlides" src="images/projects/slider/DCOstrongbow.jpg" style="width:100%">
-            <img class="mySlides" src="images/projects/slider/formatsSol.jpg" style="width:100%">
-            <img class="mySlides" src="images/projects/slider/DCOmccormick.jpg" style="width:100%">
-            <button class="slider-button slider-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="slider-button slider-display-right" onclick="plusDivs(1)">&#10095;</button>
-        </div>
-        
-    </div>
+            </div>
 
-        <div class="text-center mt-12">
-          <a href="#" class="inline-flex items-center px-8 py-3 bg-indigo-600 text-white font-medium rounded-full hover:bg-indigo-700 transition duration-300 shadow-lg shadow-indigo-500/20">
-            Visit my Github <i class="fas fa-arrow-right ml-2"></i>
-          </a>
+            <div class="text-center mt-12">
+                <a href="#"
+                    class="inline-flex items-center px-8 py-3 bg-indigo-600 text-white font-medium rounded-full hover:bg-indigo-700 transition duration-300 shadow-lg shadow-indigo-500/20">
+                    Visit my Github <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="py-20">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            <span class="gradient-text">Testimonials</span>
-          </h2>
-          <div class="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
-          <p class="text-lg text-slate-500 max-w-3xl mx-auto">
-            What my clients and colleagues say about my work
-          </p>
-        </div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="gradient-text">Testimonials</span>
+                </h2>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
+                <p class="text-lg text-slate-500 max-w-3xl mx-auto">
+                    What my clients and colleagues say about my work
+                </p>
+            </div>
 
-        <div class="testimonials-slider testimonials-wrapper">
-          <div class="carousel carousel-center rounded-box">
-            <div class="carousel-item">
-              <!-- Testimonial 1 -->
-              <div class="testimonial-card bg-white p-8 rounded-xl shadow-md m-4">
-                <div class="flex items-center mb-6">
-                  <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
-                    <img src="images/testimonials/testimonial_placeholder.png" alt="Ivan Jimenez" class="w-full h-full object-cover"/>
-                  </div>
-                  <div class="card-info">
-                    <h4 class="font-bold">Ivan Jimenez</h4>
-                    <p class="text-sm text-slate-500">
-                      Manager, Customer Success, Flashtalking
-                    </p>
-                  </div>
+            <div class="testimonials-slider testimonials-wrapper">
+                <div class="carousel carousel-center rounded-box">
+                    <div class="carousel-item">
+                        <!-- Testimonial 1 
+                        <div class="testimonial-card bg-white p-8 rounded-xl shadow-md m-4 w-full max-w-96">
+                            <div class="flex items-center mb-6">
+                                <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
+                                    <img src="images/testimonials/testimonial_placeholder.png" alt="Ivan Jimenez"
+                                        class="w-full h-full object-cover" />
+                                </div>
+                                <div class="card-info">
+                                    <h4 class="font-bold">Ivan Jimenez</h4>
+                                    <p class="text-sm text-slate-500">
+                                        Manager, Customer Success, Flashtalking
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="text-slate-600 mb-6">-</p>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item"> -->
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card bg-white p-8 rounded-xl shadow-md m-4 w-full max-w-96">
+                            <div class="flex items-center mb-6">
+                                <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
+                                    <img src="images/testimonials/testimonial_placeholder.png" alt="Joel Weinberg"
+                                        class="w-full h-full object-cover" />
+                                </div>
+                                <div class="card-info">
+                                    <h4 class="font-bold">Joel Weinberg</h4>
+                                    <p class="text-sm text-slate-500">
+                                        Product and Sales Specialist, Amazon
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="text-slate-600 mb-6">
+                            <p class="original">
+                                "Working with Vanessa Zittle has been a true privilege. Her exceptional talent in
+                                communication, precise assessment of customer needs and masterful implementation of solutions have been instrumental to our team's success. Vanessa possesses a rare ability to deeply understand client expectations and transform them into actionable, effective solutions.
+
+                                What sets Vanessa apart is her natural talent for building meaningful connections with
+                                customers, asking incisive questions, and providing clear, confident guidance. These
+                                qualities have established her as a trusted advisor in both individual consultations and
+                                team environments.
+
+                                Any organization would be fortunate to have her as
+                                part of their team."</p>
+                        
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-card bg-white p-8 rounded-xl shadow-md m-4 w-full max-w-96">
+                            <div class="flex items-center mb-6">
+                                <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
+                                    <img src="images/testimonials/testimonial_placeholder.png" alt="Felicia Chamberlain"
+                                        class="w-full h-full object-cover" />
+                                </div>
+                                <div class="card-info">
+                                    <h4 class="font-bold">Felicia Chamberlain</h4>
+                                    <p class="text-sm text-slate-500">
+                                        Creative Services Director, Innovid
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="text-slate-600 mb-6">"
+                            <p class="original">Working with Vanessa was an absolute pleasure and I miss having her as a
+                                colleague. She is a go-getter who is not afraid of a challenge. She was always able to jump in and provide quality design work, independently and on time. Vanessa is also a DCO expert, having worked for years on complex projects with a variety of clients across different markets, industries, and ad formats. Truly can’t say enough great things!"</p>
+                            <!-- <span class="dots">..."</span>
+                            <p class="extra"> - though she was primarily on the self-service team, she was always the
+                                first to volunteer to help out with managed-service accounts, which had a separate
+                                workflow and processes. </p> -->
+                            <!-- <input type="checkbox" id="btn">
+                            <label for="btn"></label> -->
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- Testimonial 5 -->
+                        <div class="testimonial-card bg-white p-8 rounded-xl shadow-md m-4 w-full max-w-96">
+                            <div class="flex items-center mb-6">
+                                <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
+                                    <img src="images/testimonials/testimonial_placeholder.png" alt="Alexis Leyva"
+                                        class="w-full h-full object-cover" />
+                                </div>
+                                <div class="card-info">
+                                    <h4 class="font-bold">Alexis Leyva</h4>
+                                    <p class="text-sm text-slate-500">
+                                        Digital Director, MullenLowe SSP3
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="text-slate-600 mb-6">
+                            <p class="original">"Durante su paso por la agencia Oveja Negra Lowe, Vanessa fue parte
+                                fundamental de nuestro equipo digital contribuyendo con una combinación valiosa de talento técnico, sensibilidad visual y compromiso constante. Sus principales responsabilidades incluyeron diseño y desarrollo de sitios web, así como la creación de correos electrónicos, programación de banners, y contenidos visuales para redes sociales, tareas que ejecutó con precisión, creatividad y gran sentido de responsabilidad.
+                                Más allá de sus habilidades técnicas, fue una profesional que siempre mantuvo altos estándares de calidad en su trabajo y que aportó ideas relevantes en la evolución de nuestras propuestas
+                                digitales para clientes de diferentes industrias."</p>
+                    
+                            </p>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- Testimonial 4 -->
+                        <div class="testimonial-card bg-white p-8 rounded-xl shadow-md m-4 w-full max-w-96">
+                            <div class="flex items-center mb-6">
+                                <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
+                                    <img src="images/testimonials/testimonial_placeholder.png" alt="William Orthman"
+                                        class="w-full h-full object-cover" />
+                                </div>
+                                <div class="card-info">
+                                    <h4 class="font-bold">William Orthman</h4>
+                                    <p class="text-sm text-slate-500">
+                                        Senior Product Marketing Manager, Amazon
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="text-slate-600 mb-6">"Working with Vanessa was a dream — she’s insanely organized, proactive, and brings calm to chaos. No matter the project, she makes things clearer, faster, and better. She approaches every challenge with composure, innovative thinking, and a commitment to achieving meaningful results. I enthusiastically recommend her for roles that demand strategic thinking, superior communication skills, and a dedication to continuous improvement. A total force for creative teams that need structure without losing spark."</p>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-                <p class="text-slate-600 mb-6">-</p>
-                <div class="flex text-yellow-400">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </div>
             </div>
-            <div class="carousel-item">
-              <!-- Testimonial 2 -->
-              <div
-                class="testimonial-card bg-white p-8 rounded-xl shadow-md m-4"
-              >
-                <div class="flex items-center mb-6">
-                  <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
-                    <img
-                      src="images/testimonials/testimonial_placeholder.png"
-                      alt="Joel Weinberg"
-                      class="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div class="card-info">
-                    <h4 class="font-bold">Joel Weinberg</h4>
-                    <p class="text-sm text-slate-500">
-                      Product and Sales Specialist, Amazon
-                    </p>
-                  </div>
-                </div>
-                <p class="text-slate-600 mb-6">""</p>
-                <div class="flex text-yellow-400">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <!-- Testimonial 3 -->
-              <div
-                class="testimonial-card bg-white p-8 rounded-xl shadow-md m-4"
-              >
-                <div class="flex items-center mb-6">
-                  <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
-                    <img
-                      src="images/testimonials/testimonial_placeholder.png"
-                      alt="Felicia Chamberlain"
-                      class="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div class="card-info">
-                    <h4 class="font-bold">Felicia Chamberlain</h4>
-                    <p class="text-sm text-slate-500">
-                      Creative Services Director, Innovid
-                    </p>
-                  </div>
-                </div>
-                <p class="text-slate-600 mb-6">""</p>
-                <div class="flex text-yellow-400">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <!-- Testimonial 4 -->
-              <div
-                class="testimonial-card bg-white p-8 rounded-xl shadow-md m-4"
-              >
-                <div class="flex items-center mb-6">
-                  <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
-                    <img
-                      src="images/testimonials/testimonial_placeholder.png"
-                      alt="William Orthman"
-                      class="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div class="card-info">
-                    <h4 class="font-bold">William Orthman</h4>
-                    <p class="text-sm text-slate-500">
-                      Senior Product Marketing Manager, Amazon
-                    </p>
-                  </div>
-                </div>
-                <p class="text-slate-600 mb-6">""</p>
-                <div class="flex text-yellow-400">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <!-- Testimonial 5 -->
-              <div
-                class="testimonial-card bg-white p-8 rounded-xl shadow-md m-4"
-              >
-                <div class="flex items-center mb-6">
-                  <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
-                    <img
-                      src="images/testimonials/testimonial_placeholder.png"
-                      alt="Alexis Leyva"
-                      class="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div class="card-info">
-                    <h4 class="font-bold">Alexis Leyva</h4>
-                    <p class="text-sm text-slate-500">
-                      Digital Director, MullenLowe SSP3
-                    </p>
-                  </div>
-                </div>
-                <p class="text-slate-600 mb-6">"Vanessa fue una pieza clave en nuestro equipo digital en Oveja Negra Lowe. Destacó por su talento técnico, creatividad, compromiso y actitud colaborativa. Siempre entregó soluciones de alta calidad y aportó ideas valiosas. Es una profesional confiable, adaptable y dedicada. Altamente recomendada."</p>
-                <div class="flex text-yellow-400">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-slate-50">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Get <span class="gradient-text">In Touch</span>
-          </h2>
-          <div class="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
-          <p class="text-lg text-slate-500 max-w-3xl mx-auto">
-            Have a project in mind or want to discuss potential opportunities?
-            I'd love to hear from you!
-          </p>
-        </div>
-
-        <div class="flex justify-center px-4">
-          <div class="w-full max-w-xl bg-white p-8 rounded-xl shadow-md">
-            <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
-            <p class="text-slate-600 mb-8">
-              Feel free to reach out through any of these channels. I typically
-              respond within 12 hours.
-            </p>
-
-            <div class="space-y-6">
-              <div class="flex items-start">
-                <div
-                  class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4"
-                >
-                  <i class="fas fa-envelope text-xl"></i>
-                </div>
-                <div>
-                  <h4 class="font-bold mb-1">Email</h4>
-                  <a
-                    href="mailto:vanzittle@gmail.com"
-                    class="text-slate-600 hover:text-indigo-600"
-                    >vanzittle@gmail.com</a
-                  >
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div
-                  class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4"
-                >
-                  <i class="fas fa-phone-alt text-xl"></i>
-                </div>
-                <div>
-                  <h4 class="font-bold mb-1">Phone</h4>
-                  <a
-                    href="tel:+529996054038"
-                    class="text-slate-600 hover:text-indigo-600"
-                    >+52 (999) 605 4038</a
-                  >
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div
-                  class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4"
-                >
-                  <i class="fas fa-map-marker-alt text-xl"></i>
-                </div>
-                <div>
-                  <h4 class="font-bold mb-1">Location</h4>
-                  <p class="text-slate-600">Mexico</p>
-                </div>
-              </div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    Get <span class="gradient-text">In Touch</span>
+                </h2>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
+                <p class="text-lg text-slate-500 max-w-3xl mx-auto">
+                    Have a project in mind or want to discuss potential opportunities?
+                    I'd love to hear from you!
+                </p>
             </div>
 
-            <div class="mt-10">
-              <h4 class="font-bold mb-4">Follow Me</h4>
-              <div class="flex space-x-4">
-                <a
-                  href="https://www.linkedin.com/in/vanessazittle/"
-                  target="_blank"
-                  class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 hover:bg-indigo-600 hover:text-white transition duration-300"
-                >
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a
-                  href="https://github.com/VanZittle"
-                  target="_blank"
-                  class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 hover:bg-indigo-600 hover:text-white transition duration-300"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
+            <div class="flex justify-center px-4">
+                <div class="w-full max-w-xl bg-white p-8 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                    <p class="text-slate-600 mb-8">
+                        Feel free to reach out through any of these channels. I typically
+                        respond within 12 hours.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div
+                                class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Email</h4>
+                                <a href="mailto:vanzittle@gmail.com"
+                                    class="text-slate-600 hover:text-indigo-600">vanzittle@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div
+                                class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Phone</h4>
+                                <a href="tel:+529996054038" class="text-slate-600 hover:text-indigo-600">+52 (999) 605
+                                    4038</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div
+                                class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 mr-4">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Location</h4>
+                                <p class="text-slate-600">Mexico</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10">
+                        <h4 class="font-bold mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://www.linkedin.com/in/vanessazittle/" target="_blank"
+                                class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 hover:bg-indigo-600 hover:text-white transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/VanZittle" target="_blank"
+                                class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 hover:bg-indigo-600 hover:text-white transition duration-300">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-slate-900 text-white p-7">
-      <div class="max-w-7xl mx-auto">
-        <p class="text-slate-400 text-center">
-          © 2025 Vanessa Zittle. All rights reserved
-        </p>
-      </div>
+        <div class="max-w-7xl mx-auto">
+            <p class="text-slate-400 text-center">
+                © 2025 Vanessa Zittle. All rights reserved
+            </p>
+        </div>
     </footer>
-    
-  </body>
+
+</body>
+
 </html>

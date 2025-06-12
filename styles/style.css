@@ -120,7 +120,7 @@ body {
   align-items: center;
   visibility: visible;
 }
-.modal-none{
+.modal-none {
   display: none;
 }
 .modal.show {
@@ -140,7 +140,7 @@ body {
   text-align: center;
 }
 
-.modal-content2{
+.modal-content2 {
   max-width: 95%;
   padding: 10px;
 }
@@ -170,9 +170,9 @@ body {
 .close-btn:hover {
   color: #ff4b4b;
 }
-#testimonials{
+/* #testimonials{
   display: none;
-}
+} */
 .testimonials-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -186,6 +186,9 @@ body {
 .testimonial-card:hover {
   transform: scale(1.05);
 }
+.text-yellow-400 {
+  margin-top: 15px;
+}
 
 .contact-input {
   transition: all 0.3s ease;
@@ -195,9 +198,9 @@ body {
 .contact-input:focus {
   border-bottom-color: var(--primary);
 }
-.carousel-item {
+/* .carousel-item {
   display: none;
-}
+} */
 .carousel-item.active {
   display: block;
 }
@@ -222,10 +225,41 @@ body {
   margin-left: 10px;
   transform: translate(0%, -50%);
 }
-  .slider-display-right {
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    margin-right: 15px;
-    transform: translate(0%, -50%);
-  }
+.slider-display-right {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  margin-right: 15px;
+  transform: translate(0%, -50%);
+}
+/* styles for testimonials */
+.extra {
+  display: none;
+}
+p {
+  display: inline;
+}
+input[type="checkbox"] {
+  height: 2em;
+  display: block;
+  appearance: none;
+}
+label {
+  position: relative;
+  padding: 1em;
+  background-color: lightcoral;
+  color: var(--light);
+  cursor: pointer;
+}
+label::before {
+  content: "read more";
+}
+input[type="checkbox"]:checked ~ label::before {
+  content: "Read less";
+}
+.dots:has(~ input[type="checkbox"]:checked) {
+  display: none;
+}
+.extra:has(~ input[type="checkbox"]:checked) {
+  display: inline;
+}
